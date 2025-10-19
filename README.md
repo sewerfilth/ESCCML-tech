@@ -60,14 +60,6 @@ It’s not just a protocol—it’s a substrate for infra-native value streams, 
 
 ---
 
-## 📣 Contribute
-
-- Fork the repo and open a pull request
-- Submit issues for spec clarifications or runtime extensions
-- Join validator simulations and governance modeling
-
----
-
 ## 📜 License
 
 This work is licensed under [MIT](LICENSE) or [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/), depending on your preference.
