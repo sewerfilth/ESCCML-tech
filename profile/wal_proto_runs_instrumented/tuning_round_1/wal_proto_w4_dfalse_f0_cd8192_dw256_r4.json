@@ -1,0 +1,24 @@
+warning: unused import: `select`
+   --> modules/storage-engine/src/lib.rs:304:38
+    |
+304 |     use crossbeam_channel::{bounded, select, Receiver, RecvTimeoutError, Sender};
+    |                                      ^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: variable does not need to be mutable
+   --> modules/storage-engine/src/lib.rs:337:21
+    |
+337 |                 let mut batcher = OwnedWalBatcher::new(tree, config.clone());
+    |                     ----^^^^^^^
+    |                     |
+    |                     help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: `storage-engine` (lib) generated 2 warnings (run `cargo fix --lib -p storage-engine` to apply 2 suggestions)
+    Finished `release` profile [optimized] target(s) in 0.40s
+     Running `target/release/examples/wal_proto --workers 4 --iterations 200 --batch 256 --flush-interval-ms 0 --channel-depth 8192 --drain-window 256`
+wal_proto: workers=4 iterations=200 batch=256 flush_ms=0 durable=false
+aggregator wrote 2461760 bytes
+{"workers":4,"iterations":200,"batch":256,"durable":false,"elapsed_s":0.036,"total_records":204800,"tps":5653703.69,"send_p50_ms":0.000,"send_p95_ms":0.000,"write_p50_ms":0.003,"write_p95_ms":0.030,"sync_p50_ms":0.000,"sync_p95_ms":0.000,"flush_p50_ms":0.000,"flush_p95_ms":0.000}

@@ -1,0 +1,3 @@
+aggregator_bench: Total ops: 200000 in 4.552749833s => 43929.49 ops/s
+command: cargo run -p storage-engine --example aggregator_bench --features aggregator --release
+notes: aggregator updated to use crossbeam_channel::bounded(1024) with draining up to 256 messages per loop. Microbench: 4 producers x 50k ops each.

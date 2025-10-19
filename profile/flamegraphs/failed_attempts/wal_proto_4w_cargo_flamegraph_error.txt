@@ -1,0 +1,14 @@
+cargo flamegraph run failed: xctrace requires Xcode (macOS). Full stderr:
+
+WARNING: profiling without debuginfo. Enable symbol information by adding the following lines to Cargo.toml:
+
+[profile.release]
+debug = true
+
+Or set this environment variable:
+
+CARGO_PROFILE_RELEASE_DEBUG=true
+
+xcode-select: error: tool 'xctrace' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+failed to sample program, exited with code: Some(1)

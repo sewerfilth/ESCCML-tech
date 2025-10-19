@@ -1,0 +1,21 @@
+warning: unused import: `select`
+   --> modules/storage-engine/src/lib.rs:304:38
+    |
+304 |     use crossbeam_channel::{bounded, select, Receiver, RecvTimeoutError, Sender};
+    |                                      ^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: variable does not need to be mutable
+   --> modules/storage-engine/src/lib.rs:337:21
+    |
+337 |                 let mut batcher = OwnedWalBatcher::new(tree, config.clone());
+    |                     ----^^^^^^^
+    |                     |
+    |                     help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: `storage-engine` (lib) generated 2 warnings (run `cargo fix --lib -p storage-engine` to apply 2 suggestions)
+    Finished `release` profile [optimized] target(s) in 0.40s
+     Running `target/release/examples/wal_proto --workers 8 --iterations 200 --batch 256 --flush-interval-ms 1000 --channel-depth 1024 --drain-window 4096`
