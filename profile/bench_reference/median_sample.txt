@@ -1,0 +1,3 @@
+(see original sample file in profile/instrumented/optimized/stabilize_arm_jemalloc/wal_proto_jemalloc_median_sample.txt)
+
+Note: full macOS `sample` output retained in the original path; this is a placeholder copy showing where to find it.
