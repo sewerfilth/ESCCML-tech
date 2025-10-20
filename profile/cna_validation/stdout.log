@@ -1,0 +1,2 @@
+wal_proto_cna: workers=4 iterations=200 batch=256 flush_ms=1000 durable=false cna_sample_rate= 1
+{"workers":4,"iterations":200,"batch":256,"durable":false,"elapsed_s":0.568,"total_records":204800,"tps":360440.38}

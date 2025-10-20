@@ -1,0 +1,36 @@
+TG=32 INFL=4
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.361,"total_records":102400,"tps":283440.30}
+TG=32 INFL=8
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.216,"total_records":102400,"tps":474259.88}
+TG=32 INFL=16
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.214,"total_records":102400,"tps":478071.56}
+TG=64 INFL=4
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.218,"total_records":102400,"tps":469403.94}
+TG=64 INFL=8
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.224,"total_records":102400,"tps":456496.41}
+TG=64 INFL=16
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.209,"total_records":102400,"tps":488854.96}
+TG=128 INFL=4
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.209,"total_records":102400,"tps":490630.58}
+TG=128 INFL=8
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.204,"total_records":102400,"tps":501063.86}
+TG=128 INFL=16
+wal_proto_cna: workers=4 iterations=100 batch=256 flush_ms=1000 durable=false cna_sample_rate= 0
+aggregator wrote 108400 bytes
+{"workers":4,"iterations":100,"batch":256,"durable":false,"elapsed_s":0.212,"total_records":102400,"tps":482118.12}
