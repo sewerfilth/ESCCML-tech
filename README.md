@@ -19,7 +19,7 @@ ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain prot
 
 ### 🔹 Ledger
 - Lock-free WAL ingestion pipeline
-- >9M TPS on M2-class hardware
+- Over 100M Peak TPS on Apple M2-class hardware
 - Sub-2.5ms flush p95 under durable workloads
 
 ### 🔹 Codec
