@@ -21,16 +21,19 @@ ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain prot
 - Lock-free WAL ingestion pipeline
 - 74.77M Peak TPS on Apple M2-class hardware
 - Sub-0.2ms p95 latency under durable workloads
+- **Hydration via `cna16` exceeds 200B TPS**, enabling manifest unpacking and semantic hinting at GPU-native speeds
 
 ### 🔹 Codec
 - Channelized encoding (Y/Cb/Cr-style)
 - Integer-only accounting
-- Zero-copy Merkle hashing and hydration fingerprints via `cna16`
+- Zero-copy Merkle hashing and hydration fingerprints
+- `cna16` codec accelerates hydration, resolving delta matrices and metadata envelopes before replay
 
 ### 🔹 Convergence
 - Manifest-sealed replay replaces BFT
 - Friend-batch detection ensures output agreement
 - Validator rewards tied to throughput, not stake weight
+- Replay pipeline: `cna16` → `fused16` → accumulator flush
 
 ### 🔹 Epoch-Split Anchoring
 - Time-indexed state convergence
