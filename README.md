@@ -6,7 +6,7 @@ A sovereign-grade ledger protocol designed for validator-class throughput, foren
 
 ## 🧠 What Is ESCCML?
 
-ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain protocol that replaces block-based consensus with manifest-sealed finality, lock-free ingestion, and codec-native determinism. It enables validator-class performance on commodity hardware while enforcing economic realism and audit-grade replayability.
+ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain protocol that replaces block-based consensus with manifest-sealed finality, GPU-native hydration, and codec-deterministic replay. It enables validator-class performance on commodity hardware while enforcing throughput realism, privilege decay, and audit-grade convergence.
 
 ---
 
@@ -14,27 +14,27 @@ ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain prot
 
 ### 🔹 Manifest
 - Atomic unit of state transition
-- Sealed with Merkle root, validator signature, codec hash, and timestamp
+- Sealed with Merkle root, output identity, codec hash, and timestamp
 - Guarantees deterministic finality and replayability
 
 ### 🔹 Ledger
 - Lock-free WAL ingestion pipeline
-- Over 100M Peak TPS on Apple M2-class hardware
-- Sub-2.5ms flush p95 under durable workloads
+- 74.77M Peak TPS on Apple M2-class hardware
+- Sub-0.2ms p95 latency under durable workloads
 
 ### 🔹 Codec
 - Channelized encoding (Y/Cb/Cr-style)
 - Integer-only accounting
-- Zero-copy Merkle hashing and light-client support
+- Zero-copy Merkle hashing and hydration fingerprints via `cna16`
 
 ### 🔹 Convergence
-- Manifest-first agreement model
-- Friend-batch detection replaces BFT
-- Validator rewards tied to output identity, not stake weight
+- Manifest-sealed replay replaces BFT
+- Friend-batch detection ensures output agreement
+- Validator rewards tied to throughput, not stake weight
 
 ### 🔹 Epoch-Split Anchoring
 - Time-indexed state convergence
-- Supports asynchronous validation across latency zones (Earth-Mars, disaster mesh)
+- Supports asynchronous replay across latency zones (Earth–Mars, disaster mesh)
 - Enables jurisdictional leasing and policy divergence
 
 ---
@@ -42,8 +42,8 @@ ESCCML (Epoch-Split Codec Convergence Manifest Ledger) is a post-blockchain prot
 ## ⚖️ Economic Primitives
 
 - **Piggy Bank Accumulator**: Recycles transaction dust into governance pools
-- **Privilege Decay**: Penalizes idle stake, enforces continuous validator contribution
-- **Stake-to-Throughput Ratio (S:T)**: Aligns rewards with measurable work
+- **Privilege Decay**: Penalizes idle stake, enforces continuous replay contribution
+- **Throughput-to-Stake Ratio (T:S)**: Aligns rewards with measurable work
 
 ---
 
@@ -55,8 +55,9 @@ ESCCML proves that decentralized ledgers can be:
 - **Auditably deterministic**
 - **Energy-efficient (~1.4×10⁻¹² kWh/tx)**
 - **Governable by execution, not speculation**
+- **Planetary-coordinated and latency-tolerant**
 
-It’s not just a protocol—it’s a substrate for infra-native value streams, planetary coordination, and sovereign-grade currency systems.
+It’s not just a protocol—it’s a substrate for infra-native value streams, replay-based governance, and sovereign-grade currency systems.
 
 ---
 
